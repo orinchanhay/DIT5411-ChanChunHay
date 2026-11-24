@@ -1,0 +1,4 @@
+model,parameters,epochs_trained,best_epoch,val_acc_pct,test_acc_pct,test_loss,test_images
+C_residual,5484249,2,2,92.09,90.92,0.3859,162817
+B_deeper,5472537,2,2,90.33,88.86,0.4896,162817
+A_spatial,5460825,2,2,83.59,80.81,0.8505,162817

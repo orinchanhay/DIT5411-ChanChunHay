@@ -1,0 +1,12 @@
+{
+  "classes": 13065,
+  "epochs": 2,
+  "batch_size": 32,
+  "image_size": 64,
+  "fit_images": 469673,
+  "val_images": 52187,
+  "samples_per_class_per_epoch": 200,
+  "augmentation": "RandomTranslation 1px, white fill, nearest",
+  "bn_calibration_batches": 500,
+  "optimizer": "Adam 0.001"
+}
