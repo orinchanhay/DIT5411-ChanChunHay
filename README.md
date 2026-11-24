@@ -1,5 +1,7 @@
 # DIT5411 Handwritten Chinese Character Recognition (13,065 Classes)
 
+**Author:** Chan Chun Hay — DIT5411 Machine Learning assignment
+
 This project trains and compares three convolutional neural networks (CNNs) in TensorFlow/Keras to recognise 13,065 handwritten Traditional Chinese characters. The three models are compared on a held-out test set.
 
 ## Final Results
@@ -114,3 +116,14 @@ The final pipeline came out of several rounds of diagnosis. Each change below wa
 
 2. Download and extract the full dataset from [chenkenanalytic/handwritting_data_all](https://github.com/chenkenanalytic/handwritting_data_all) into `data/cleaned_data/`.
 3. Open `ML_assignment.ipynb` in JupyterLab, set `QUICK_TEST = False`, and run the cells in order. Training all three models for 2 epochs took about 4 hours on an RTX 3050 Ti Laptop GPU.
+
+## References
+
+1. chenkenanalytic. *handwritting_data_all* (Traditional Chinese handwriting dataset). GitHub. https://github.com/chenkenanalytic/handwritting_data_all
+2. He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep Residual Learning for Image Recognition. *CVPR 2016*. https://arxiv.org/abs/1512.03385 (basis of the `C_residual` model)
+3. Simonyan, K., & Zisserman, A. (2015). Very Deep Convolutional Networks for Large-Scale Image Recognition. *ICLR 2015*. https://arxiv.org/abs/1409.1556 (stacked 3 × 3 convolutions, basis of the `B_deeper` model)
+4. Ioffe, S., & Szegedy, C. (2015). Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. *ICML 2015*. https://arxiv.org/abs/1502.03167
+5. Kingma, D. P., & Ba, J. (2015). Adam: A Method for Stochastic Optimization. *ICLR 2015*. https://arxiv.org/abs/1412.6980
+6. Keras documentation: RandomTranslation layer. https://keras.io/api/layers/preprocessing_layers/image_augmentation/random_translation/
+7. Keras documentation: BatchNormalization layer. https://keras.io/api/layers/normalization_layers/batch_normalization/
+8. TensorFlow documentation: Install TensorFlow with pip (GPU / WSL 2). https://www.tensorflow.org/install/pip
